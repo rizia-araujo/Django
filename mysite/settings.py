@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-37lf-&nhbg*k*0)3x=o1t6r9*+2+$5x^t-4&tmao@a5at5id34
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['https://rizzcoredev.pythonanywhere.com/', '.pythonanywhere.com'] # endereço real do site em deployment
 
 
 # Application definition
@@ -121,5 +122,6 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Configurações de segurança para produção
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
