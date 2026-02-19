@@ -128,6 +128,10 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # Configurações de segurança para produção
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+#Forçando o uso de HTTP
+
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+CSRF_TRUSTED_ORIGINS = ['https://rizzcoredev.pythonanywhere.com/', 'https://rizzcoredev.pythonanywhere.com/']
